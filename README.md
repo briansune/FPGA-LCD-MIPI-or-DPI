@@ -50,3 +50,32 @@ The resistor-network is not re-simulated via IBIS simulator, so if you really co
 | 15 | <img src="./images/6p9inch_lcd.png" width="100">      | 🟢 DONE    | MIPI | GC9702P      | 4   | V   | [HD69002C31](https://github.com/briansune/Kintex-7-MIPI-DSI-6.9-inch-LCD)           | K7     | Vivado 2020.2 | 60 |   720,1440,[24]     |
 | 16 | <img src="./images/7inch_lcd.png" width="100">        | 🟢 DONE    | DPI  | AT070N92/94  | x   | V   | [AT070N92/94](https://github.com/briansune/max-II-cpld-sdram-tft-driver)            | MAX II | Quartus       | 60 |    800,480,[24]     |
 | 17 | <img src="./images/5inch_lcd_s3.png" width="100">     | 🟢 DONE    | DPI  | AT070N92/94  | x   | V   | [AT070N92/94](https://github.com/briansune/Spartan_3_sdram_ftf_driver)              | S3     | ISE 14.7      | 60 |    800,480,[24]     |
+
+### Tested LCD Driver IC(s)
+
+✅ No Issue / Supported
+
+✖ Datasheet clearly mentioned not support
+
+❔ No Datasheet is found
+
+❌ Datasheet clearly mentioned support, but abnormal display
+
+🚨 Not recommended
+
+🚫 Command Mode supported, color depth work differently
+
+|Idx|IC Company|Driver IC|16bpp|24bpp|Stable|
+|:-:|:-:|:-:|:-:|:-:|:-:|
+|  1 | RENESAS SP | R61322      | ✖️ | ✅ | ✅ |
+|  2 | RENESAS SP | R63419      | ✖️ | ✅ | ✅ |
+|  3 | Sitronix   | ST7797      | ✅ | ✅ | ✅ |
+|  4 | Sitronix   | ST7701S     | ✅ | ✅ | ✅ |
+|  5 | JADARD     | JD9365DA-H3 | ✅ | ✅ | ✅ |
+|  6 | Forcelead  | FL7703NP    | 🔜 | 🔜 | 🔜 |
+|  7 | Novatek    | NT35516     | ✅ | ✅ | ✅ |
+|  8 | Novatek    | NT35950     | ❔ | ✅ | ✅ |
+|  8 | Fitipower  | JD9522Z     | ✅ | ✅ | ✅ |
+|  9 | Himax      | HX8399-C    | ✅ | ✅ | ✅ |
+| 10 | GALAXYCORE | GC9C01      | 🚫 | 🚫 | ✅ |
+| 11 | GALAXYCORE | GC9702P     | ❌ | ✅ | 🚨 |
