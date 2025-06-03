@@ -31,6 +31,8 @@ The resistor-network is not re-simulated via IBIS simulator, so if you really co
 
 ### Display Examples
 
+Remarks: "V" Video Mode, "C" Command Mode
+
 |Idx|Display|Status|I/F|Driver IC|Lane #|Mode|Project Link|Tested FPGA|IDE|FPS|W,H,BPP|
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 |  1 | <img src="./images/1p32inch_lcd.png" width="100">     | 🟢 DONE    | MIPI | GC9C01       | 1   | C   | [ZJY132R-IG03](https://github.com/briansune/Kintex-7-MIPI-DSI-1.32-inch-LCD)        | K7,ZU  | Vivado 2020.2 | 60 |    360,360,[24]     |
