@@ -29,6 +29,10 @@ The resistor-network is not re-simulated via IBIS simulator, so if you really co
 
 <img src="./images/MIPI_IP_TOP.jpg" width="600">
 
+### A Full Resources Report under Kintex-7 XC7K325T
+
+[Full-Report](./Kintex7_MIPI_DSI.html)
+
 ### Display Examples
 
 Remarks: "V" Video Mode, "C" Command Mode

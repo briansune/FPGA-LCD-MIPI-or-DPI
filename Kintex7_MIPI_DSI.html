@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fabric Usage (Split by Category)</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h2>Fabric Usage Summary</h2>
+    <br><br>
+    
+        <h3>Block Memory</h3>
+        <canvas id="chart_0" width="1200" height="400"></canvas>
+        <script>
+            const ctx_chart_0 = document.getElementById('chart_0').getContext('2d');
+            const chart_chart_0 = new Chart(ctx_chart_0, {
+                type: 'bar',
+                data: {
+                    labels: ["RAMB18E1", "RAMB36E1"],
+                    datasets: [{"label": "mipi_dsi_1_cm_1p32in_24", "data": [2, 2], "backgroundColor": "hsl(0, 70%, 55%)"}, {"label": "mipi_dsi_1_vm_1p6in_16", "data": [1, 2], "backgroundColor": "hsl(8, 70%, 55%)"}, {"label": "mipi_dsi_1_vm_1p6in_16a7", "data": [1, 2], "backgroundColor": "hsl(17, 70%, 55%)"}, {"label": "mipi_dsi_1_vm_1p6in_24", "data": [2, 2], "backgroundColor": "hsl(25, 70%, 55%)"}, {"label": "mipi_dsi_1_vm_1p6in_24a7", "data": [2, 2], "backgroundColor": "hsl(34, 70%, 55%)"}, {"label": "mipi_dsi_2_cm_4p5in_24", "data": [1, 3], "backgroundColor": "hsl(42, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_2p95in_16", "data": [0, 3], "backgroundColor": "hsl(51, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_2p95in_16b", "data": [0, 3], "backgroundColor": "hsl(60, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_2p95in_24", "data": [1, 3], "backgroundColor": "hsl(68, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_2p95in_24b", "data": [1, 3], "backgroundColor": "hsl(77, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_3p97in_16", "data": [0, 3], "backgroundColor": "hsl(85, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_3p97in_16b", "data": [0, 3], "backgroundColor": "hsl(94, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_3p97in_24", "data": [1, 3], "backgroundColor": "hsl(102, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_3p97in_24a7", "data": [1, 3], "backgroundColor": "hsl(111, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_3p97in_24b", "data": [1, 3], "backgroundColor": "hsl(120, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_4p5in_16", "data": [0, 3], "backgroundColor": "hsl(128, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_4p5in_24", "data": [1, 3], "backgroundColor": "hsl(137, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_4p5in_24a7", "data": [1, 3], "backgroundColor": "hsl(145, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_4p5in_24a7_b", "data": [1, 3], "backgroundColor": "hsl(154, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_5in_24_ic", "data": [1, 4], "backgroundColor": "hsl(162, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_5p5in_16", "data": [0, 3], "backgroundColor": "hsl(171, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_5p5in_24", "data": [1, 4], "backgroundColor": "hsl(180, 70%, 55%)"}, {"label": "mipi_dsi_3_vm_3p4in_16", "data": [2, 2], "backgroundColor": "hsl(188, 70%, 55%)"}, {"label": "mipi_dsi_3_vm_3p4in_24", "data": [3, 2], "backgroundColor": "hsl(197, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_10p1in_16", "data": [0, 4], "backgroundColor": "hsl(205, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_10p1in_24", "data": [1, 4], "backgroundColor": "hsl(214, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_10p1in_24a7", "data": [1, 4], "backgroundColor": "hsl(222, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5in_24", "data": [1, 4], "backgroundColor": "hsl(231, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5in_24_flip", "data": [1, 4], "backgroundColor": "hsl(240, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5in_24_ic", "data": [1, 4], "backgroundColor": "hsl(248, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_16", "data": [0, 4], "backgroundColor": "hsl(257, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_16a7", "data": [0, 4], "backgroundColor": "hsl(265, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_24", "data": [1, 4], "backgroundColor": "hsl(274, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_24_ic", "data": [1, 4], "backgroundColor": "hsl(282, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_24a7", "data": [1, 4], "backgroundColor": "hsl(291, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_c_16", "data": [0, 4], "backgroundColor": "hsl(300, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_c_24", "data": [1, 4], "backgroundColor": "hsl(308, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_c_24a7", "data": [1, 4], "backgroundColor": "hsl(317, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_6p9in_24", "data": [1, 4], "backgroundColor": "hsl(325, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_6p9in_24a7", "data": [1, 4], "backgroundColor": "hsl(334, 70%, 55%)"}, {"label": "mipi_dsi_8_vm_5in_2k_24", "data": [1, 4], "backgroundColor": "hsl(342, 70%, 55%)"}, {"label": "mipi_dsi_8_vm_5in_4k_24_1080p", "data": [1, 4], "backgroundColor": "hsl(351, 70%, 55%)"}]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: { display: true, text: 'Instances Used' }
+                        },
+                        x: {
+                            title: { display: true, text: 'Ref Name' }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top'
+                        },
+                        tooltip: {
+                            mode: 'index',
+                            intersect: false
+                        }
+                    }
+                }
+            });
+            charts.push(chart_chart_0);
+        </script>
+        
+        <h3>CarryLogic</h3>
+        <canvas id="chart_1" width="1200" height="400"></canvas>
+        <script>
+            const ctx_chart_1 = document.getElementById('chart_1').getContext('2d');
+            const chart_chart_1 = new Chart(ctx_chart_1, {
+                type: 'bar',
+                data: {
+                    labels: ["CARRY4"],
+                    datasets: [{"label": "mipi_dsi_1_cm_1p32in_24", "data": [91], "backgroundColor": "hsl(0, 70%, 55%)"}, {"label": "mipi_dsi_1_vm_1p6in_16", "data": [92], "backgroundColor": "hsl(8, 70%, 55%)"}, {"label": "mipi_dsi_1_vm_1p6in_16a7", "data": [92], "backgroundColor": "hsl(17, 70%, 55%)"}, {"label": "mipi_dsi_1_vm_1p6in_24", "data": [90], "backgroundColor": "hsl(25, 70%, 55%)"}, {"label": "mipi_dsi_1_vm_1p6in_24a7", "data": [90], "backgroundColor": "hsl(34, 70%, 55%)"}, {"label": "mipi_dsi_2_cm_4p5in_24", "data": [103], "backgroundColor": "hsl(42, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_2p95in_16", "data": [100], "backgroundColor": "hsl(51, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_2p95in_16b", "data": [100], "backgroundColor": "hsl(60, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_2p95in_24", "data": [100], "backgroundColor": "hsl(68, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_2p95in_24b", "data": [100], "backgroundColor": "hsl(77, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_3p97in_16", "data": [100], "backgroundColor": "hsl(85, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_3p97in_16b", "data": [100], "backgroundColor": "hsl(94, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_3p97in_24", "data": [100], "backgroundColor": "hsl(102, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_3p97in_24a7", "data": [100], "backgroundColor": "hsl(111, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_3p97in_24b", "data": [100], "backgroundColor": "hsl(120, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_4p5in_16", "data": [100], "backgroundColor": "hsl(128, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_4p5in_24", "data": [100], "backgroundColor": "hsl(137, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_4p5in_24a7", "data": [100], "backgroundColor": "hsl(145, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_4p5in_24a7_b", "data": [100], "backgroundColor": "hsl(154, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_5in_24_ic", "data": [100], "backgroundColor": "hsl(162, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_5p5in_16", "data": [100], "backgroundColor": "hsl(171, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_5p5in_24", "data": [100], "backgroundColor": "hsl(180, 70%, 55%)"}, {"label": "mipi_dsi_3_vm_3p4in_16", "data": [106], "backgroundColor": "hsl(188, 70%, 55%)"}, {"label": "mipi_dsi_3_vm_3p4in_24", "data": [106], "backgroundColor": "hsl(197, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_10p1in_16", "data": [118], "backgroundColor": "hsl(205, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_10p1in_24", "data": [118], "backgroundColor": "hsl(214, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_10p1in_24a7", "data": [118], "backgroundColor": "hsl(222, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5in_24", "data": [119], "backgroundColor": "hsl(231, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5in_24_flip", "data": [119], "backgroundColor": "hsl(240, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5in_24_ic", "data": [119], "backgroundColor": "hsl(248, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_16", "data": [118], "backgroundColor": "hsl(257, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_16a7", "data": [118], "backgroundColor": "hsl(265, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_24", "data": [119], "backgroundColor": "hsl(274, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_24_ic", "data": [119], "backgroundColor": "hsl(282, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_24a7", "data": [119], "backgroundColor": "hsl(291, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_c_16", "data": [118], "backgroundColor": "hsl(300, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_c_24", "data": [119], "backgroundColor": "hsl(308, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_c_24a7", "data": [119], "backgroundColor": "hsl(317, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_6p9in_24", "data": [118], "backgroundColor": "hsl(325, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_6p9in_24a7", "data": [118], "backgroundColor": "hsl(334, 70%, 55%)"}, {"label": "mipi_dsi_8_vm_5in_2k_24", "data": [157], "backgroundColor": "hsl(342, 70%, 55%)"}, {"label": "mipi_dsi_8_vm_5in_4k_24_1080p", "data": [153], "backgroundColor": "hsl(351, 70%, 55%)"}]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: { display: true, text: 'Instances Used' }
+                        },
+                        x: {
+                            title: { display: true, text: 'Ref Name' }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top'
+                        },
+                        tooltip: {
+                            mode: 'index',
+                            intersect: false
+                        }
+                    }
+                }
+            });
+            charts.push(chart_chart_1);
+        </script>
+        
+        <h3>Clock</h3>
+        <canvas id="chart_2" width="1200" height="400"></canvas>
+        <script>
+            const ctx_chart_2 = document.getElementById('chart_2').getContext('2d');
+            const chart_chart_2 = new Chart(ctx_chart_2, {
+                type: 'bar',
+                data: {
+                    labels: ["BUFG", "MMCME2_ADV"],
+                    datasets: [{"label": "mipi_dsi_1_cm_1p32in_24", "data": [7, 2], "backgroundColor": "hsl(0, 70%, 55%)"}, {"label": "mipi_dsi_1_vm_1p6in_16", "data": [7, 2], "backgroundColor": "hsl(8, 70%, 55%)"}, {"label": "mipi_dsi_1_vm_1p6in_16a7", "data": [7, 2], "backgroundColor": "hsl(17, 70%, 55%)"}, {"label": "mipi_dsi_1_vm_1p6in_24", "data": [7, 2], "backgroundColor": "hsl(25, 70%, 55%)"}, {"label": "mipi_dsi_1_vm_1p6in_24a7", "data": [7, 2], "backgroundColor": "hsl(34, 70%, 55%)"}, {"label": "mipi_dsi_2_cm_4p5in_24", "data": [7, 2], "backgroundColor": "hsl(42, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_2p95in_16", "data": [7, 2], "backgroundColor": "hsl(51, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_2p95in_16b", "data": [7, 2], "backgroundColor": "hsl(60, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_2p95in_24", "data": [7, 2], "backgroundColor": "hsl(68, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_2p95in_24b", "data": [7, 2], "backgroundColor": "hsl(77, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_3p97in_16", "data": [7, 2], "backgroundColor": "hsl(85, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_3p97in_16b", "data": [7, 2], "backgroundColor": "hsl(94, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_3p97in_24", "data": [7, 2], "backgroundColor": "hsl(102, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_3p97in_24a7", "data": [7, 2], "backgroundColor": "hsl(111, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_3p97in_24b", "data": [7, 2], "backgroundColor": "hsl(120, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_4p5in_16", "data": [7, 2], "backgroundColor": "hsl(128, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_4p5in_24", "data": [7, 2], "backgroundColor": "hsl(137, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_4p5in_24a7", "data": [7, 2], "backgroundColor": "hsl(145, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_4p5in_24a7_b", "data": [7, 2], "backgroundColor": "hsl(154, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_5in_24_ic", "data": [7, 2], "backgroundColor": "hsl(162, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_5p5in_16", "data": [7, 2], "backgroundColor": "hsl(171, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_5p5in_24", "data": [7, 2], "backgroundColor": "hsl(180, 70%, 55%)"}, {"label": "mipi_dsi_3_vm_3p4in_16", "data": [7, 2], "backgroundColor": "hsl(188, 70%, 55%)"}, {"label": "mipi_dsi_3_vm_3p4in_24", "data": [7, 2], "backgroundColor": "hsl(197, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_10p1in_16", "data": [7, 2], "backgroundColor": "hsl(205, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_10p1in_24", "data": [7, 2], "backgroundColor": "hsl(214, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_10p1in_24a7", "data": [7, 2], "backgroundColor": "hsl(222, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5in_24", "data": [7, 2], "backgroundColor": "hsl(231, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5in_24_flip", "data": [7, 2], "backgroundColor": "hsl(240, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5in_24_ic", "data": [7, 2], "backgroundColor": "hsl(248, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_16", "data": [7, 2], "backgroundColor": "hsl(257, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_16a7", "data": [7, 2], "backgroundColor": "hsl(265, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_24", "data": [7, 2], "backgroundColor": "hsl(274, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_24_ic", "data": [7, 2], "backgroundColor": "hsl(282, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_24a7", "data": [7, 2], "backgroundColor": "hsl(291, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_c_16", "data": [7, 2], "backgroundColor": "hsl(300, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_c_24", "data": [7, 2], "backgroundColor": "hsl(308, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_c_24a7", "data": [7, 2], "backgroundColor": "hsl(317, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_6p9in_24", "data": [7, 2], "backgroundColor": "hsl(325, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_6p9in_24a7", "data": [7, 2], "backgroundColor": "hsl(334, 70%, 55%)"}, {"label": "mipi_dsi_8_vm_5in_2k_24", "data": [7, 2], "backgroundColor": "hsl(342, 70%, 55%)"}, {"label": "mipi_dsi_8_vm_5in_4k_24_1080p", "data": [7, 2], "backgroundColor": "hsl(351, 70%, 55%)"}]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: { display: true, text: 'Instances Used' }
+                        },
+                        x: {
+                            title: { display: true, text: 'Ref Name' }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top'
+                        },
+                        tooltip: {
+                            mode: 'index',
+                            intersect: false
+                        }
+                    }
+                }
+            });
+            charts.push(chart_chart_2);
+        </script>
+        
+        <h3>Flop & Latch</h3>
+        <canvas id="chart_3" width="1200" height="400"></canvas>
+        <script>
+            const ctx_chart_3 = document.getElementById('chart_3').getContext('2d');
+            const chart_chart_3 = new Chart(ctx_chart_3, {
+                type: 'bar',
+                data: {
+                    labels: ["FDCE", "FDPE", "FDRE", "FDSE"],
+                    datasets: [{"label": "mipi_dsi_1_cm_1p32in_24", "data": [4, 5, 794, 72], "backgroundColor": "hsl(0, 70%, 55%)"}, {"label": "mipi_dsi_1_vm_1p6in_16", "data": [4, 5, 747, 69], "backgroundColor": "hsl(8, 70%, 55%)"}, {"label": "mipi_dsi_1_vm_1p6in_16a7", "data": [4, 5, 747, 69], "backgroundColor": "hsl(17, 70%, 55%)"}, {"label": "mipi_dsi_1_vm_1p6in_24", "data": [4, 5, 748, 69], "backgroundColor": "hsl(25, 70%, 55%)"}, {"label": "mipi_dsi_1_vm_1p6in_24a7", "data": [4, 5, 748, 69], "backgroundColor": "hsl(34, 70%, 55%)"}, {"label": "mipi_dsi_2_cm_4p5in_24", "data": [4, 5, 849, 97], "backgroundColor": "hsl(42, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_2p95in_16", "data": [4, 5, 801, 95], "backgroundColor": "hsl(51, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_2p95in_16b", "data": [4, 5, 801, 95], "backgroundColor": "hsl(60, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_2p95in_24", "data": [4, 5, 801, 95], "backgroundColor": "hsl(68, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_2p95in_24b", "data": [4, 5, 801, 95], "backgroundColor": "hsl(77, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_3p97in_16", "data": [4, 5, 804, 96], "backgroundColor": "hsl(85, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_3p97in_16b", "data": [4, 5, 797, 100], "backgroundColor": "hsl(94, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_3p97in_24", "data": [4, 5, 804, 96], "backgroundColor": "hsl(102, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_3p97in_24a7", "data": [4, 5, 804, 96], "backgroundColor": "hsl(111, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_3p97in_24b", "data": [4, 5, 801, 96], "backgroundColor": "hsl(120, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_4p5in_16", "data": [4, 5, 800, 101], "backgroundColor": "hsl(128, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_4p5in_24", "data": [4, 5, 804, 97], "backgroundColor": "hsl(137, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_4p5in_24a7", "data": [4, 5, 804, 97], "backgroundColor": "hsl(145, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_4p5in_24a7_b", "data": [4, 5, 804, 97], "backgroundColor": "hsl(154, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_5in_24_ic", "data": [3, 5, 829, 96], "backgroundColor": "hsl(162, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_5p5in_16", "data": [3, 5, 809, 96], "backgroundColor": "hsl(171, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_5p5in_24", "data": [3, 5, 820, 96], "backgroundColor": "hsl(180, 70%, 55%)"}, {"label": "mipi_dsi_3_vm_3p4in_16", "data": [0, 5, 897, 123], "backgroundColor": "hsl(188, 70%, 55%)"}, {"label": "mipi_dsi_3_vm_3p4in_24", "data": [0, 5, 897, 123], "backgroundColor": "hsl(197, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_10p1in_16", "data": [3, 5, 950, 150], "backgroundColor": "hsl(205, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_10p1in_24", "data": [3, 5, 950, 150], "backgroundColor": "hsl(214, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_10p1in_24a7", "data": [3, 5, 950, 150], "backgroundColor": "hsl(222, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5in_24", "data": [3, 5, 969, 152], "backgroundColor": "hsl(231, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5in_24_flip", "data": [3, 5, 969, 152], "backgroundColor": "hsl(240, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5in_24_ic", "data": [3, 5, 965, 151], "backgroundColor": "hsl(248, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_16", "data": [3, 5, 953, 150], "backgroundColor": "hsl(257, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_16a7", "data": [3, 5, 953, 150], "backgroundColor": "hsl(265, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_24", "data": [3, 5, 958, 151], "backgroundColor": "hsl(274, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_24_ic", "data": [3, 5, 954, 150], "backgroundColor": "hsl(282, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_24a7", "data": [3, 5, 958, 151], "backgroundColor": "hsl(291, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_c_16", "data": [3, 5, 949, 149], "backgroundColor": "hsl(300, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_c_24", "data": [3, 5, 954, 150], "backgroundColor": "hsl(308, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_c_24a7", "data": [3, 5, 954, 150], "backgroundColor": "hsl(317, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_6p9in_24", "data": [3, 5, 951, 151], "backgroundColor": "hsl(325, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_6p9in_24a7", "data": [3, 5, 951, 151], "backgroundColor": "hsl(334, 70%, 55%)"}, {"label": "mipi_dsi_8_vm_5in_2k_24", "data": [2, 5, 1166, 295], "backgroundColor": "hsl(342, 70%, 55%)"}, {"label": "mipi_dsi_8_vm_5in_4k_24_1080p", "data": [0, 5, 1117, 330], "backgroundColor": "hsl(351, 70%, 55%)"}]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: { display: true, text: 'Instances Used' }
+                        },
+                        x: {
+                            title: { display: true, text: 'Ref Name' }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top'
+                        },
+                        tooltip: {
+                            mode: 'index',
+                            intersect: false
+                        }
+                    }
+                }
+            });
+            charts.push(chart_chart_3);
+        </script>
+        
+        <h3>IO</h3>
+        <canvas id="chart_4" width="1200" height="400"></canvas>
+        <script>
+            const ctx_chart_4 = document.getElementById('chart_4').getContext('2d');
+            const chart_chart_4 = new Chart(ctx_chart_4, {
+                type: 'bar',
+                data: {
+                    labels: ["IBUF", "IBUFDS", "OBUF", "OBUFDS", "OBUFTDS", "OSERDESE2"],
+                    datasets: [{"label": "mipi_dsi_1_cm_1p32in_24", "data": [1, 1, 5, 0, 4, 2], "backgroundColor": "hsl(0, 70%, 55%)"}, {"label": "mipi_dsi_1_vm_1p6in_16", "data": [1, 1, 5, 0, 4, 2], "backgroundColor": "hsl(8, 70%, 55%)"}, {"label": "mipi_dsi_1_vm_1p6in_16a7", "data": [2, 0, 5, 0, 4, 2], "backgroundColor": "hsl(17, 70%, 55%)"}, {"label": "mipi_dsi_1_vm_1p6in_24", "data": [1, 1, 5, 0, 4, 2], "backgroundColor": "hsl(25, 70%, 55%)"}, {"label": "mipi_dsi_1_vm_1p6in_24a7", "data": [2, 0, 5, 0, 4, 2], "backgroundColor": "hsl(34, 70%, 55%)"}, {"label": "mipi_dsi_2_cm_4p5in_24", "data": [1, 1, 7, 0, 6, 3], "backgroundColor": "hsl(42, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_2p95in_16", "data": [1, 1, 7, 0, 6, 3], "backgroundColor": "hsl(51, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_2p95in_16b", "data": [1, 1, 7, 0, 6, 3], "backgroundColor": "hsl(60, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_2p95in_24", "data": [1, 1, 7, 0, 6, 3], "backgroundColor": "hsl(68, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_2p95in_24b", "data": [1, 1, 7, 0, 6, 3], "backgroundColor": "hsl(77, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_3p97in_16", "data": [1, 1, 7, 0, 6, 3], "backgroundColor": "hsl(85, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_3p97in_16b", "data": [1, 1, 7, 0, 6, 3], "backgroundColor": "hsl(94, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_3p97in_24", "data": [1, 1, 7, 0, 6, 3], "backgroundColor": "hsl(102, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_3p97in_24a7", "data": [2, 0, 7, 0, 6, 3], "backgroundColor": "hsl(111, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_3p97in_24b", "data": [1, 1, 7, 0, 6, 3], "backgroundColor": "hsl(120, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_4p5in_16", "data": [1, 1, 7, 0, 6, 3], "backgroundColor": "hsl(128, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_4p5in_24", "data": [1, 1, 7, 0, 6, 3], "backgroundColor": "hsl(137, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_4p5in_24a7", "data": [2, 0, 7, 0, 6, 3], "backgroundColor": "hsl(145, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_4p5in_24a7_b", "data": [2, 0, 7, 0, 6, 3], "backgroundColor": "hsl(154, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_5in_24_ic", "data": [1, 1, 7, 6, 0, 3], "backgroundColor": "hsl(162, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_5p5in_16", "data": [1, 1, 7, 0, 6, 3], "backgroundColor": "hsl(171, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_5p5in_24", "data": [1, 1, 7, 0, 6, 3], "backgroundColor": "hsl(180, 70%, 55%)"}, {"label": "mipi_dsi_3_vm_3p4in_16", "data": [1, 1, 9, 0, 8, 4], "backgroundColor": "hsl(188, 70%, 55%)"}, {"label": "mipi_dsi_3_vm_3p4in_24", "data": [1, 1, 9, 0, 8, 4], "backgroundColor": "hsl(197, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_10p1in_16", "data": [1, 1, 11, 0, 10, 5], "backgroundColor": "hsl(205, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_10p1in_24", "data": [1, 1, 11, 0, 10, 5], "backgroundColor": "hsl(214, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_10p1in_24a7", "data": [2, 0, 11, 0, 10, 5], "backgroundColor": "hsl(222, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5in_24", "data": [1, 1, 11, 0, 10, 5], "backgroundColor": "hsl(231, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5in_24_flip", "data": [1, 1, 11, 0, 10, 5], "backgroundColor": "hsl(240, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5in_24_ic", "data": [1, 1, 11, 10, 0, 5], "backgroundColor": "hsl(248, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_16", "data": [1, 1, 11, 0, 10, 5], "backgroundColor": "hsl(257, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_16a7", "data": [2, 0, 11, 0, 10, 5], "backgroundColor": "hsl(265, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_24", "data": [1, 1, 11, 0, 10, 5], "backgroundColor": "hsl(274, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_24_ic", "data": [1, 1, 11, 10, 0, 5], "backgroundColor": "hsl(282, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_24a7", "data": [2, 0, 11, 0, 10, 5], "backgroundColor": "hsl(291, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_c_16", "data": [1, 1, 11, 10, 0, 5], "backgroundColor": "hsl(300, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_c_24", "data": [1, 1, 11, 10, 0, 5], "backgroundColor": "hsl(308, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_c_24a7", "data": [2, 0, 11, 10, 0, 5], "backgroundColor": "hsl(317, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_6p9in_24", "data": [1, 1, 11, 0, 10, 5], "backgroundColor": "hsl(325, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_6p9in_24a7", "data": [2, 0, 11, 0, 10, 5], "backgroundColor": "hsl(334, 70%, 55%)"}, {"label": "mipi_dsi_8_vm_5in_2k_24", "data": [1, 1, 21, 0, 20, 10], "backgroundColor": "hsl(342, 70%, 55%)"}, {"label": "mipi_dsi_8_vm_5in_4k_24_1080p", "data": [1, 1, 21, 0, 20, 10], "backgroundColor": "hsl(351, 70%, 55%)"}]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: { display: true, text: 'Instances Used' }
+                        },
+                        x: {
+                            title: { display: true, text: 'Ref Name' }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top'
+                        },
+                        tooltip: {
+                            mode: 'index',
+                            intersect: false
+                        }
+                    }
+                }
+            });
+            charts.push(chart_chart_4);
+        </script>
+        
+        <h3>LUT</h3>
+        <canvas id="chart_5" width="1200" height="400"></canvas>
+        <script>
+            const ctx_chart_5 = document.getElementById('chart_5').getContext('2d');
+            const chart_chart_5 = new Chart(ctx_chart_5, {
+                type: 'bar',
+                data: {
+                    labels: ["INV", "LUT1", "LUT2", "LUT3", "LUT4", "LUT5", "LUT6"],
+                    datasets: [{"label": "mipi_dsi_1_cm_1p32in_24", "data": [2, 4, 240, 110, 140, 150, 280], "backgroundColor": "hsl(0, 70%, 55%)"}, {"label": "mipi_dsi_1_vm_1p6in_16", "data": [2, 6, 199, 121, 145, 146, 269], "backgroundColor": "hsl(8, 70%, 55%)"}, {"label": "mipi_dsi_1_vm_1p6in_16a7", "data": [2, 7, 199, 121, 145, 146, 269], "backgroundColor": "hsl(17, 70%, 55%)"}, {"label": "mipi_dsi_1_vm_1p6in_24", "data": [2, 6, 191, 121, 141, 152, 269], "backgroundColor": "hsl(25, 70%, 55%)"}, {"label": "mipi_dsi_1_vm_1p6in_24a7", "data": [2, 7, 191, 121, 141, 152, 269], "backgroundColor": "hsl(34, 70%, 55%)"}, {"label": "mipi_dsi_2_cm_4p5in_24", "data": [3, 6, 268, 135, 211, 198, 363], "backgroundColor": "hsl(42, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_2p95in_16", "data": [3, 7, 226, 139, 204, 178, 376], "backgroundColor": "hsl(51, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_2p95in_16b", "data": [3, 7, 226, 139, 204, 178, 376], "backgroundColor": "hsl(60, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_2p95in_24", "data": [3, 7, 228, 129, 203, 204, 387], "backgroundColor": "hsl(68, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_2p95in_24b", "data": [3, 7, 228, 129, 203, 204, 387], "backgroundColor": "hsl(77, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_3p97in_16", "data": [3, 7, 241, 132, 193, 211, 350], "backgroundColor": "hsl(85, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_3p97in_16b", "data": [3, 7, 239, 131, 193, 218, 339], "backgroundColor": "hsl(94, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_3p97in_24", "data": [3, 7, 233, 126, 197, 224, 365], "backgroundColor": "hsl(102, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_3p97in_24a7", "data": [3, 8, 233, 126, 197, 224, 365], "backgroundColor": "hsl(111, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_3p97in_24b", "data": [3, 7, 230, 125, 200, 222, 363], "backgroundColor": "hsl(120, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_4p5in_16", "data": [3, 7, 253, 138, 193, 184, 353], "backgroundColor": "hsl(128, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_4p5in_24", "data": [3, 7, 248, 132, 200, 195, 372], "backgroundColor": "hsl(137, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_4p5in_24a7", "data": [3, 8, 248, 132, 200, 195, 372], "backgroundColor": "hsl(145, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_4p5in_24a7_b", "data": [3, 8, 248, 132, 200, 195, 372], "backgroundColor": "hsl(154, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_5in_24_ic", "data": [3, 7, 264, 137, 190, 217, 378], "backgroundColor": "hsl(162, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_5p5in_16", "data": [3, 8, 253, 143, 212, 180, 364], "backgroundColor": "hsl(171, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_5p5in_24", "data": [3, 8, 263, 137, 196, 201, 374], "backgroundColor": "hsl(180, 70%, 55%)"}, {"label": "mipi_dsi_3_vm_3p4in_16", "data": [4, 10, 256, 172, 232, 233, 400], "backgroundColor": "hsl(188, 70%, 55%)"}, {"label": "mipi_dsi_3_vm_3p4in_24", "data": [4, 10, 267, 165, 217, 238, 425], "backgroundColor": "hsl(197, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_10p1in_16", "data": [5, 7, 303, 190, 241, 239, 425], "backgroundColor": "hsl(205, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_10p1in_24", "data": [5, 7, 308, 180, 232, 250, 435], "backgroundColor": "hsl(214, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_10p1in_24a7", "data": [5, 8, 308, 180, 232, 250, 435], "backgroundColor": "hsl(222, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5in_24", "data": [5, 11, 307, 189, 245, 261, 435], "backgroundColor": "hsl(231, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5in_24_flip", "data": [5, 11, 307, 189, 245, 261, 435], "backgroundColor": "hsl(240, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5in_24_ic", "data": [5, 11, 310, 189, 245, 257, 435], "backgroundColor": "hsl(248, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_16", "data": [5, 7, 307, 195, 252, 215, 441], "backgroundColor": "hsl(257, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_16a7", "data": [5, 8, 306, 194, 252, 219, 438], "backgroundColor": "hsl(265, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_24", "data": [5, 12, 306, 184, 229, 257, 435], "backgroundColor": "hsl(274, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_24_ic", "data": [5, 12, 309, 184, 229, 253, 435], "backgroundColor": "hsl(282, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_24a7", "data": [5, 13, 306, 184, 229, 257, 435], "backgroundColor": "hsl(291, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_c_16", "data": [5, 7, 310, 195, 252, 211, 441], "backgroundColor": "hsl(300, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_c_24", "data": [5, 12, 309, 184, 229, 253, 435], "backgroundColor": "hsl(308, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_c_24a7", "data": [5, 13, 309, 184, 229, 253, 435], "backgroundColor": "hsl(317, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_6p9in_24", "data": [5, 7, 305, 183, 240, 252, 437], "backgroundColor": "hsl(325, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_6p9in_24a7", "data": [5, 8, 305, 183, 240, 252, 437], "backgroundColor": "hsl(334, 70%, 55%)"}, {"label": "mipi_dsi_8_vm_5in_2k_24", "data": [10, 17, 410, 304, 313, 358, 577], "backgroundColor": "hsl(342, 70%, 55%)"}, {"label": "mipi_dsi_8_vm_5in_4k_24_1080p", "data": [10, 7, 391, 279, 319, 323, 631], "backgroundColor": "hsl(351, 70%, 55%)"}]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: { display: true, text: 'Instances Used' }
+                        },
+                        x: {
+                            title: { display: true, text: 'Ref Name' }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top'
+                        },
+                        tooltip: {
+                            mode: 'index',
+                            intersect: false
+                        }
+                    }
+                }
+            });
+            charts.push(chart_chart_5);
+        </script>
+        
+        <h3>MuxFx</h3>
+        <canvas id="chart_6" width="1200" height="400"></canvas>
+        <script>
+            const ctx_chart_6 = document.getElementById('chart_6').getContext('2d');
+            const chart_chart_6 = new Chart(ctx_chart_6, {
+                type: 'bar',
+                data: {
+                    labels: ["MUXF7"],
+                    datasets: [{"label": "mipi_dsi_1_cm_1p32in_24", "data": [0], "backgroundColor": "hsl(0, 70%, 55%)"}, {"label": "mipi_dsi_1_vm_1p6in_16", "data": [0], "backgroundColor": "hsl(8, 70%, 55%)"}, {"label": "mipi_dsi_1_vm_1p6in_16a7", "data": [0], "backgroundColor": "hsl(17, 70%, 55%)"}, {"label": "mipi_dsi_1_vm_1p6in_24", "data": [0], "backgroundColor": "hsl(25, 70%, 55%)"}, {"label": "mipi_dsi_1_vm_1p6in_24a7", "data": [0], "backgroundColor": "hsl(34, 70%, 55%)"}, {"label": "mipi_dsi_2_cm_4p5in_24", "data": [2], "backgroundColor": "hsl(42, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_2p95in_16", "data": [1], "backgroundColor": "hsl(51, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_2p95in_16b", "data": [1], "backgroundColor": "hsl(60, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_2p95in_24", "data": [2], "backgroundColor": "hsl(68, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_2p95in_24b", "data": [2], "backgroundColor": "hsl(77, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_3p97in_16", "data": [3], "backgroundColor": "hsl(85, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_3p97in_16b", "data": [3], "backgroundColor": "hsl(94, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_3p97in_24", "data": [2], "backgroundColor": "hsl(102, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_3p97in_24a7", "data": [2], "backgroundColor": "hsl(111, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_3p97in_24b", "data": [2], "backgroundColor": "hsl(120, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_4p5in_16", "data": [0], "backgroundColor": "hsl(128, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_4p5in_24", "data": [2], "backgroundColor": "hsl(137, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_4p5in_24a7", "data": [2], "backgroundColor": "hsl(145, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_4p5in_24a7_b", "data": [2], "backgroundColor": "hsl(154, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_5in_24_ic", "data": [3], "backgroundColor": "hsl(162, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_5p5in_16", "data": [1], "backgroundColor": "hsl(171, 70%, 55%)"}, {"label": "mipi_dsi_2_vm_5p5in_24", "data": [1], "backgroundColor": "hsl(180, 70%, 55%)"}, {"label": "mipi_dsi_3_vm_3p4in_16", "data": [1], "backgroundColor": "hsl(188, 70%, 55%)"}, {"label": "mipi_dsi_3_vm_3p4in_24", "data": [2], "backgroundColor": "hsl(197, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_10p1in_16", "data": [4], "backgroundColor": "hsl(205, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_10p1in_24", "data": [3], "backgroundColor": "hsl(214, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_10p1in_24a7", "data": [3], "backgroundColor": "hsl(222, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5in_24", "data": [1], "backgroundColor": "hsl(231, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5in_24_flip", "data": [1], "backgroundColor": "hsl(240, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5in_24_ic", "data": [1], "backgroundColor": "hsl(248, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_16", "data": [1], "backgroundColor": "hsl(257, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_16a7", "data": [1], "backgroundColor": "hsl(265, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_24", "data": [2], "backgroundColor": "hsl(274, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_24_ic", "data": [2], "backgroundColor": "hsl(282, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_24a7", "data": [2], "backgroundColor": "hsl(291, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_c_16", "data": [1], "backgroundColor": "hsl(300, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_c_24", "data": [2], "backgroundColor": "hsl(308, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_5p5in_c_24a7", "data": [2], "backgroundColor": "hsl(317, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_6p9in_24", "data": [4], "backgroundColor": "hsl(325, 70%, 55%)"}, {"label": "mipi_dsi_4_vm_6p9in_24a7", "data": [4], "backgroundColor": "hsl(334, 70%, 55%)"}, {"label": "mipi_dsi_8_vm_5in_2k_24", "data": [0], "backgroundColor": "hsl(342, 70%, 55%)"}, {"label": "mipi_dsi_8_vm_5in_4k_24_1080p", "data": [1], "backgroundColor": "hsl(351, 70%, 55%)"}]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: { display: true, text: 'Instances Used' }
+                        },
+                        x: {
+                            title: { display: true, text: 'Ref Name' }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top'
+                        },
+                        tooltip: {
+                            mode: 'index',
+                            intersect: false
+                        }
+                    }
+                }
+            });
+            charts.push(chart_chart_6);
+        </script>
+        
+    <script>
+        const charts = [];
+        
+    function toggleAll(visible) {
+        charts.forEach(chart => {
+            chart.data.datasets.forEach(ds => ds.hidden = !visible);
+            chart.update();
+        });
+    }
+    
+    </script>
+</body>
+</html>
+    
