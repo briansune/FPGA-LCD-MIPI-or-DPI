@@ -59,8 +59,9 @@ Remarks: "V" Video Mode, "C" Command Mode
 | 13 | <img src="./images/5p5inch_2k_lcd.png" width="100">   | 🟢 DONE    | MIPI | R63419       | 4,4 | V   | [LS055R1SX04](https://github.com/briansune/Kintex-7-MIPI-DSI-5.5-inch-2K-LCD)       | K7     | Vivado 2024.2 | 60 | 720x2,2560,[24]     |
 | 14 | <img src="./images/5p5inch_4k_lcd.png" width="100">   | 🟡 1080p   | MIPI | NT35950      | 4,4 | V   | [AML055D105G](https://github.com/briansune/Kintex-7-MIPI-DSI-5.5-inch-4K-LCD)       | K7     | Vivado 2024.2 | 60 |  1080,1920,[24]     |
 | 15 | <img src="./images/6p9inch_lcd.png" width="100">      | 🟢 DONE    | MIPI | GC9702P      | 4   | V   | [HD69002C31](https://github.com/briansune/Kintex-7-MIPI-DSI-6.9-inch-LCD)           | K7     | Vivado 2024.2 | 60 |   720,1440,[24]     |
-| 16 | <img src="./images/7inch_lcd.png" width="100">        | 🟢 DONE    | DPI  | AT070N92/94  | x   | V   | [AT070N92/94](https://github.com/briansune/max-II-cpld-sdram-tft-driver)            | MAX II | Quartus       | 60 |    800,480,[24]     |
-| 17 | <img src="./images/5inch_lcd_s3.png" width="100">     | 🟢 DONE    | DPI  | AT070N92/94  | x   | V   | [AT070N92/94](https://github.com/briansune/Spartan_3_sdram_ftf_driver)              | S3     | ISE 14.7      | 60 |    800,480,[24]     |
+| 16 | <img src="./images/3p5inch_lcd.png" width="100">      | 🟢 DONE    | MIPI | FL7703NP     | 4   | V   | [HD35052C31](https://github.com/briansune/Kintex-7-MIPI-DSI-3.5-inch-LCD)           | K7     | Vivado 2024.2 | 60 |   720,1280,[16,24]  |
+| 17 | <img src="./images/7inch_lcd.png" width="100">        | 🟢 DONE    | DPI  | AT070N92/94  | x   | V   | [AT070N92/94](https://github.com/briansune/max-II-cpld-sdram-tft-driver)            | MAX II | Quartus       | 60 |    800,480,[24]     |
+| 18 | <img src="./images/5inch_lcd_s3.png" width="100">     | 🟢 DONE    | DPI  | AT070N92/94  | x   | V   | [AT070N92/94](https://github.com/briansune/Spartan_3_sdram_ftf_driver)              | S3     | ISE 14.7      | 60 |    800,480,[24]     |
 
 ### Tested LCD Driver IC(s)
 
@@ -83,7 +84,7 @@ Remarks: "V" Video Mode, "C" Command Mode
 |  3 | Sitronix   | ST7797      | ✅ | ✅ | ✅ |
 |  4 | Sitronix   | ST7701S     | ✅ | ✅ | ✅ |
 |  5 | JADARD     | JD9365DA-H3 | ✅ | ✅ | ✅ |
-|  6 | Forcelead  | FL7703NP    | 🔜 | 🔜 | 🔜 |
+|  6 | Forcelead  | FL7703NP    | ✅ | ✅ | ✅ |
 |  7 | Novatek    | NT35516     | ✅ | ✅ | ✅ |
 |  8 | Novatek    | NT35950     | ❔ | ✅ | ✅ |
 |  8 | Fitipower  | JD9522Z     | ✅ | ✅ | ✅ |
