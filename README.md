@@ -25,6 +25,16 @@ This example provided detail resistor-network vs MC20902 design, which is aligne
 
 The resistor-network is not re-simulated via IBIS simulator, so if you really concern on SI then do it as your will.
 
+### Commonly Asked Questions
+
+1) Q: Why no use Spartan 6? A: Because XC6S series already EOL long time ago !!!
+2) Q: Do this design only work on Xilinx 7-series? A: There are example in Ultrascale, and other non-MIPI DSI supported FPGA brand tested internally.
+3) Q: Why there are no brand xxx FPGA given? A: Because either the brand xxx either I don't have it or it is tested internally but not worth to recreate new repositories.
+4) Q: Can brand xxx FPGA support 1080p, 2k, 4k etc A: If you understand how MIPI-DSI video mode works, this question won't even exist from first place!!!
+5) Q: Can this Verilog-based HDL design work on brand xxxx. A: Very high chances, because the inherent design don't rely on IPs nor any DPHY, it is pure MACROs and HDL.
+
+If there are any technical questions, please contact via Email: briansune@gmail.com
+
 ### Video Test Pattern Top Block-Diagram
 
 <img src="./images/MIPI_IP_TOP.jpg" width="600">
