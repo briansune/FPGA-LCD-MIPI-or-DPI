@@ -78,6 +78,8 @@ Remarks: "V" Video Mode, "C" Command Mode
 
 ✅ No Issue / Supported
 
+❎ Vendor confirm it is not supported or silicon issue
+
 ✖ Datasheet clearly mentioned not support
 
 ❔ No Datasheet is found
@@ -102,4 +104,4 @@ Remarks: "V" Video Mode, "C" Command Mode
 |  9 | Himax      | HX8399-C    | ✅ | ✅ | ✅ |
 | 10 | GALAXYCORE | GC9C01      | 🚫 | 🚫 | ✅ |
 | 11 | GALAXYCORE | GC9702P     | ❌ | ✅ | 🚨 |
-| 12 | New Vision | NV3051F1    | ❌ | ✅ | 🚨 |
+| 12 | New Vision | NV3051F1    | ❎ | ✅ | ✅ |
