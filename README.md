@@ -12,10 +12,19 @@ paypal.me/briansune
 
 ### Expected FPGA Support
 
-1) In the follow examples, Xilinx 7 series and ultrascale+ series should able to support as much MIPI display as possible.
-2) Xilinx 7 would require resistor network to convert LVDS to SLVS.
-3) Successful cases are demonstrated on three Xilinx FPGA families "Kintex", "Artix", and "ZYNQ Ultrascale+".
-4) It is confident to say this pure Verilog-based MIPI DSI design is stabled and matured enough to work on.
+1) Xilinx - 7 series (Currently tested on Kintex 7 & Artix 7)
+2) Xilinx - 6 series (Currently tested on Spartan 6)
+3) Xilinx - Ultrascale+ / Ultrascale  (Currently tested on ZYNQMP)
+4) Altera - Cyclone IV (🔜 working on hardware)
+5) Altera - Cyclone V (🔜 working on hardware)
+6) Anlogic - EG4 series (🔜 working on hardware)
+7) Anlogic - DR1 series (🔜 working on hardware)
+
+
+a) In the follow examples, Xilinx 6 series, 7 series, ultrascale+ series should able to support as much MIPI display as possible.
+b) Xilinx 6 or 7 would require resistor network to convert LVDS to SLVS.
+c) Successful cases are demonstrated on three Xilinx FPGA families "Spartan", "Kintex", "Artix", and "ZYNQ Ultrascale+".
+d) It is confident to say this pure Verilog-based MIPI DSI design is stabled and matured enough to merge onto any FPGA with serialization feature.
 
 ### Read First !
 
