@@ -18,7 +18,7 @@ paypal.me/briansune
 
 3) ✅ Xilinx - Ultrascale+ / Ultrascale  (Currently tested on ZYNQMP)
 
-4) 🔜 Altera - Cyclone IV
+4) ✅ Altera - Cyclone IV (Currently tested on Cyclone IV EP4CE6F17C8)
 
 5) 🔜 Altera - Cyclone V
 
@@ -85,7 +85,7 @@ Remarks: "V" Video Mode, "C" Command Mode
 |  3 | <img src="./images/2p95inch_lcd.png" width="100">     | 🟢 DONE    | MIPI | ST7701S      | 2   | V   | [CY300H4003](https://github.com/briansune/Kintex-7-MIPI-DSI-2.95-inch-LCD)          | K7     | Vivado 2024.2 | 60 |    360,640,[16,24]  |
 |  4 | <img src="./images/3p97inch_lcd.png" width="100">     | 🟢 DONE    | MIPI | ST7701S      | 2   | V   | [T397B5-C24-02](https://github.com/briansune/Artix-Kintex-7-MIPI-DSI-3.97-inch-LCD) | A7,K7  | Vivado 2024.2 | 60 |    480,800,[16,24]  |
 |  5 | <img src="./images/4p5inch_lcd.png" width="100">      | 🟢 DONE    | MIPI | NT35516      | 2   | V/C | [INX4.5](https://github.com/briansune/Artix-Kintex-7-MIPI-DSI-4.5-inch-LCD)         | A7,K7  | Vivado 2024.2 | 60 |    540,960,[16,24]  |
-|  6 | <img src="./images/5p5inch_lcd.png" width="100">      | 🟢 DONE    | MIPI | HX8399C      | 4   | V   | [AML055T012A K7](https://github.com/briansune/Kintex-7-MIPI-DSI-5.5-inch-LCD)<br>[AML055T012A S6](https://github.com/briansune/Spartan-6-MIPI-DSI-5.5-inch-LCD)          | S6,A7,K7     | Vivado 2024.2 | 50,60 |  1080,1920,[16,24]  |
+|  6 | <img src="./images/5p5inch_lcd.png" width="100">      | 🟢 DONE    | MIPI | HX8399C      | 4   | V   | [AML055T012A K7](https://github.com/briansune/Kintex-7-MIPI-DSI-5.5-inch-LCD)<br>[AML055T012A S6](https://github.com/briansune/Spartan-6-MIPI-DSI-5.5-inch-LCD)<br>[AML055T012A C4](https://github.com/briansune/Cyclone-IV-MIPI-DSI-5.5-inch-LCD)          | C4,S6,A7,K7     | Vivado 2024.2 | 40,50,60 |  1080,1920,[16,24]  |
 |  7 | <img src="./images/3p97inch_lcd_2nd.png" width="100"> | 🟢 DONE    | MIPI | ST7701S      | 2   | V   | [HXR397HS25PIN](https://github.com/briansune/Kintex-7-MIPI-DSI-3.97-inch-LCD-B)     | A7,K7  | Vivado 2024.2 | 60 |    480,800,[16,24]  |
 |  8 | <img src="./images/5inch_lcd.JPG" width="100">        | 🟢 DONE    | MIPI | R61322       | 4   | V   | [DXQ5D0039](https://github.com/briansune/Kintex-7-MIPI-DSI-5-inch-LCD)              | A7,K7  | Vivado 2024.2 | 60 |  1080,1920,[24]     |
 |  9 | <img src="./images/5p5inch_lcd_c.png" width="100">    | 🟢 DONE    | MIPI | JD9522Z      | 4   | V   | [HD55017C31](https://github.com/briansune/Kintex-7-MIPI-DSI-5.5-inch-LCD-C)         | S6,A7,K7  | Vivado 2024.2 | 60 |  1080,1920,[16,24]  |
