@@ -10,22 +10,24 @@ paypal.me/briansune
 
 ### This project aimed to support MIPI or DPI I/F off-the-shelf LCD/TFT display.
 
-### Expected FPGA Support
+#### Expected FPGA Support
 
-1) Xilinx - 7 series (Currently tested on Kintex 7 & Artix 7)
+1) ✅ Xilinx - 7 series (Currently tested on Kintex 7 & Artix 7)
 
-2) Xilinx - 6 series (Currently tested on Spartan 6)
+2) ✅ Xilinx - 6 series (Currently tested on Spartan 6)
 
-3) Xilinx - Ultrascale+ / Ultrascale  (Currently tested on ZYNQMP)
+3) ✅ Xilinx - Ultrascale+ / Ultrascale  (Currently tested on ZYNQMP)
 
-4) Altera - Cyclone IV (🔜 working on hardware)
+4) 🔜 Altera - Cyclone IV
 
-5) Altera - Cyclone V (🔜 working on hardware)
+5) 🔜 Altera - Cyclone V
 
-6) Anlogic - EG4 series (🔜 working on hardware)
+6) 🔜 Anlogic - EG4 series
 
-7) Anlogic - DR1 series (🔜 working on hardware)
+7) 🔜 Anlogic - DR1 series
 
+
+#### FPGA Support Details
 
 a) In the follow examples, Xilinx 6 series, 7 series, ultrascale+ series should able to support as much MIPI display as possible.
 
@@ -53,7 +55,11 @@ The resistor-network is not re-simulated via IBIS simulator, so if you really co
 
 4) Q: Can this Verilog-based HDL design work on brand xxxx. A: Very high chances, because the inherent design don't rely on IPs nor any DPHY, it is pure MACROs and HDL.
 
-If there are any technical questions, please contact via Email: briansune@gmail.com
+Remarks: there are many people asked Spartan 6 should support MIPI-DSI as well.
+
+From experiment, it do work as expected, but why I got to buy Spartan 6 when Artix 7 is even cheaper and performs better in all aspects ❓❓❓
+
+>>> If there are any technical questions, please contact via Email: briansune@gmail.com
 
 ### Video Test Pattern Top Block-Diagram
 
