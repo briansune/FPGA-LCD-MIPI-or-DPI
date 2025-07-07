@@ -104,9 +104,9 @@ Remarks: "V" Video Mode, "C" Command Mode
 | 15 | <img src="./images/6p9inch_lcd.png" width="100">      | 🟢 DONE    | MIPI | GC9702P      | 4   | V   | [HD69002C31](https://github.com/briansune/Kintex-7-MIPI-DSI-6.9-inch-LCD)           | C4,A7,K7  | Quartus<br>Vivado | 60 |   720,1440,[24]     |
 | 16 | <img src="./images/3p5inch_lcd.png" width="100">      | 🟢 DONE    | MIPI | FL7703NP     | 4   | V   | [HD35052C31](https://github.com/briansune/Kintex-7-MIPI-DSI-3.5-inch-LCD)           | C4,S6,A7,K7  | Quartus<br>ISE<br>Vivado | 60 |   720,1280,[16,24]  |
 | 17 | <img src="./images/4p1inch_lcd.png" width="100">      | 🟢 DONE    | MIPI | NV3051F1     | 4   | V   | [HD41004C31](https://github.com/briansune/Kintex-7-MIPI-DSI-4.1-inch-LCD)           | A7,K7  | Vivado | 60 |   720,1280,[24]     |
-| 17 | <img src="./images/5inch_lcd_720.png" width="100">    | 🟢 DONE    | MIPI | ILI9881C     | 4   | V   | [HD50004C30](https://github.com/briansune/Artix-7-MIPI-DSI-5-inch-LCD)              | A7     | Vivado | 60 |   720,1280,[16,24]     |
-| 18 | <img src="./images/7inch_lcd.png" width="100">        | 🟢 DONE    | DPI  | AT070N92/94  | x   | V   | [AT070N92/94](https://github.com/briansune/max-II-cpld-sdram-tft-driver)            | MAX II | Quartus       | 60 |    800,480,[24]     |
-| 19 | <img src="./images/5inch_lcd_s3.png" width="100">     | 🟢 DONE    | DPI  | AT070N92/94  | x   | V   | [AT070N92/94](https://github.com/briansune/Spartan_3_sdram_ftf_driver)              | S3     | ISE      | 60 |    800,480,[24]     |
+| 18 | <img src="./images/5inch_lcd_720.png" width="100">    | 🟢 DONE    | MIPI | ILI9881C     | 4   | V   | [HD50004C30](https://github.com/briansune/Artix-7-MIPI-DSI-5-inch-LCD)              | A7     | Vivado | 60 |   720,1280,[16,24]     |
+| 19 | <img src="./images/7inch_lcd.png" width="100">        | 🟢 DONE    | DPI  | AT070N92/94  | x   | V   | [AT070N92/94](https://github.com/briansune/max-II-cpld-sdram-tft-driver)            | MAX II | Quartus       | 60 |    800,480,[24]     |
+| 20 | <img src="./images/5inch_lcd_s3.png" width="100">     | 🟢 DONE    | DPI  | AT070N92/94  | x   | V   | [AT070N92/94](https://github.com/briansune/Spartan_3_sdram_ftf_driver)              | S3     | ISE      | 60 |    800,480,[24]     |
 
 ### Tested LCD Driver IC(s)
 
