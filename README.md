@@ -24,7 +24,7 @@ paypal.me/briansune
 
 6) ✅ Anlogic - EG4 series (Currently tested on EAGLE 4 EG4X20BG256)
 
-7) 🔜 Anlogic - DR1 series
+7) ✅ Anlogic - DR1 series (Currently tested on Dragon 1 DR1V90MEG484)
 
 
 #### FPGA Support Details
@@ -81,6 +81,8 @@ From experiment, it do work as expected, but why I got to buy Spartan 6 when Art
 
 5) Tang Dynasty 4.6
 
+6) Tang Dynasty 5.9
+
 ### Display Examples
 
 Remarks: "V" Video Mode, "C" Command Mode
@@ -92,7 +94,7 @@ Remarks: "V" Video Mode, "C" Command Mode
 |  3 | <img src="./images/2p95inch_lcd.png" width="100">     | 🟢 DONE    | MIPI | ST7701S      | 2   | V   | [CY300H4003](https://github.com/briansune/Kintex-7-MIPI-DSI-2.95-inch-LCD)          | K7     | Vivado | 60 |    360,640,[16,24]  |
 |  4 | <img src="./images/3p97inch_lcd.png" width="100">     | 🟢 DONE    | MIPI | ST7701S      | 2   | V   | [T397B5-C24-02](https://github.com/briansune/Artix-Kintex-7-MIPI-DSI-3.97-inch-LCD) | C4,A7,K7  | Quartus<br>Vivado | 60 |    480,800,[16,24]  |
 |  5 | <img src="./images/4p5inch_lcd.png" width="100">      | 🟢 DONE    | MIPI | NT35516      | 2   | V/C | [INX4.5](https://github.com/briansune/Artix-Kintex-7-MIPI-DSI-4.5-inch-LCD)         | C4,A7,K7  | Quartus<br>Vivado | 60 |    540,960,[16,24]  |
-|  6 | <img src="./images/5p5inch_lcd.png" width="100">      | 🟢 DONE    | MIPI | HX8399C      | 4   | V   | [AML055T012A K7](https://github.com/briansune/Kintex-7-MIPI-DSI-5.5-inch-LCD)<br>[AML055T012A S6](https://github.com/briansune/Spartan-6-MIPI-DSI-5.5-inch-LCD)<br>[AML055T012A C4](https://github.com/briansune/Cyclone-IV-MIPI-DSI-5.5-inch-LCD)<br>[AML055T012A EG4](https://github.com/briansune/Eagle-4-MIPI-DSI-5.5-inch-LCD)          | EG4,C4,S6,A7,K7     | TD<br>Quartus<br>Vivado | 40,50,60 |  1080,1920,[16,24]  |
+|  6 | <img src="./images/5p5inch_lcd.png" width="100">      | 🟢 DONE    | MIPI | HX8399C      | 4   | V   | [AML055T012A K7](https://github.com/briansune/Kintex-7-MIPI-DSI-5.5-inch-LCD)<br>[AML055T012A S6](https://github.com/briansune/Spartan-6-MIPI-DSI-5.5-inch-LCD)<br>[AML055T012A C4](https://github.com/briansune/Cyclone-IV-MIPI-DSI-5.5-inch-LCD)<br>[AML055T012A EG4](https://github.com/briansune/Eagle-4-MIPI-DSI-5.5-inch-LCD)<br>[AML055T012A DR1]https://github.com/briansune/Dragon-1-MIPI-DSI-5.5-inch-LCD | EG4,C4,S6,A7,K7     | TD<br>Quartus<br>Vivado | 40,50,60 |  1080,1920,[16,24]  |
 |  7 | <img src="./images/3p97inch_lcd_2nd.png" width="100"> | 🟢 DONE    | MIPI | ST7701S      | 2   | V   | [HXR397HS25PIN](https://github.com/briansune/Kintex-7-MIPI-DSI-3.97-inch-LCD-B)     | A7,K7  | Vivado | 60 |    480,800,[16,24]  |
 |  8 | <img src="./images/5inch_lcd.JPG" width="100">        | 🟢 DONE    | MIPI | R61322       | 4   | V   | [DXQ5D0039](https://github.com/briansune/Kintex-7-MIPI-DSI-5-inch-LCD)              | A7,K7  | Vivado | 60 |  1080,1920,[24]     |
 |  9 | <img src="./images/5p5inch_lcd_c.png" width="100">    | 🟢 DONE    | MIPI | JD9522Z      | 4   | V   | [HD55017C31](https://github.com/briansune/Kintex-7-MIPI-DSI-5.5-inch-LCD-C)         | C4,S6,A7,K7  | Quartus<br>ISE<br>Vivado | 60 |  1080,1920,[16,24]  |
