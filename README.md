@@ -22,10 +22,15 @@ paypal.me/briansune
 
 5) 🔜 Altera - Cyclone V
 
-6) ✅ Anlogic - EG4 series (Currently tested on EAGLE 4 EG4X20BG256)
+6) ✅ Anlogic - EG4 series (Currently tested on EAGLE 4 EG4X20BG256) <- SS
 
-7) ✅ Anlogic - DR1 series (Currently tested on Dragon 1 DR1V90MEG484)
+7) ✅ Anlogic - DR1 series (Currently tested on Dragon 1 DR1V90MEG484) <- SS
 
+* Remarks due to the vendor and board company support is utlraly bad on Anlogic.
+
+* Remarks: Anlogic devices are no longer being use nor support in any designs.
+
+* Remarks: Simple as FIFO MACROs could be wrong and not even simulated!
 
 #### FPGA Support Details
 
