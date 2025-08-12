@@ -20,17 +20,23 @@ paypal.me/briansune
 
 4) ✅ Altera - Cyclone IV (Currently tested on Cyclone IV EP4CE6F17C8)
 
-5) 🔜 Altera - Cyclone V
+5) ✅ Altera - Cyclone V (Currently tested on Cyclone V 5CSEBA5U19C8)
 
-6) ✅ Anlogic - EG4 series (Currently tested on EAGLE 4 EG4X20BG256) <- SS
+6) ✅ Anlogic - EG4 series (Currently tested on EAGLE 4 EG4X20BG256)
 
-7) ✅ Anlogic - DR1 series (Currently tested on Dragon 1 DR1V90MEG484) <- SS
+7) ✅ Anlogic - DR1 series (Currently tested on Dragon 1 DR1V90MEG484)
 
-* Remarks due to the vendor and board company support is utlraly bad on Anlogic.
+##### Remarks on FPGA Support
 
-* Remarks: Anlogic devices are no longer being use nor support in any designs.
+* For Cyclone V, test gear is under NDA, it is sure that it can perform better than Cyclone IV.
 
-* Remarks: Simple as FIFO MACROs could be wrong and not even simulated!
+* For Cyclone V it can align with the HSTL1.8V differential pair rather than LVDS.
+
+* due to the vendor and board company support is utlraly bad on Anlogic.
+
+* Anlogic devices are no longer being use nor support in any designs.
+
+* Simple as FIFO MACROs could be wrong and not even simulated!
 
 #### FPGA Support Details
 
